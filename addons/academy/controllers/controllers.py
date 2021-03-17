@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
-# from odoo import http
+from odoo import http
 
 
-# class Academy(http.Controller):
-#     @http.route('/academy/academy/', auth='public')
+# class Openacademy(http.Controller):
+#     @http.route('/openacademy/openacademy/', auth='public')
 #     def index(self, **kw):
 #         return "Hello, world"
 
-#     @http.route('/academy/academy/objects/', auth='public')
+#     @http.route('/openacademy/openacademy/objects/', auth='public')
 #     def list(self, **kw):
-#         return http.request.render('academy.listing', {
-#             'root': '/academy/academy',
-#             'objects': http.request.env['academy.academy'].search([]),
+#         return http.request.render('openacademy.listing', {
+#             'root': '/openacademy/openacademy',
+#             'objects': http.request.env['openacademy.openacademy'].search([]),
 #         })
 
-#     @http.route('/academy/academy/objects/<model("academy.academy"):obj>/', auth='public')
+#     @http.route('/openacademy/openacademy/objects/<model("openacademy.openacademy"):obj>/', auth='public')
 #     def object(self, obj, **kw):
-#         return http.request.render('academy.object', {
+#         return http.request.render('openacademy.object', {
 #             'object': obj
 #         })
